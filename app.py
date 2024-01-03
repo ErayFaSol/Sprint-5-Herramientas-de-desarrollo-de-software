@@ -3,9 +3,10 @@ import plotly.express as px
 import streamlit as st
 
 car_data = pd.read_csv('vehicles_us.csv') # leer los datos
+encabezado = st.header('Proyecto sprint 5: Herramientas de desarrollo de software')
 hist_button = st.checkbox('Construir histograma') # crear un botón
 disp_button = st.checkbox('Construir diagrama de dispersion')
-encabezado = st.header('Proyecto sprint 5: Herramientas de desarrollo de software')
+
 
 if hist_button: # al hacer clic en el botón
     # escribir un mensaje
